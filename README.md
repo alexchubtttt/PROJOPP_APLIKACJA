@@ -5,6 +5,7 @@ Sklep Internetowy to aplikacja mająca na celu dać możliwość użytkownikom z
 
 Zasada działania
 Aplikacja działa w kilku kluczowych krokach:
+
 Rejestracja i logowanie: Użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto. 
 Przeglądanie produktów: Użytkownicy mogą przeglądać produkty dostępne w sklepie. Produkty są pogrupowane w kategorie, co ułatwia wyszukiwanie. Każdy produkt ma opis, zdjęcia i cenę.
 Dodawanie do koszyka: Użytkownicy mogą dodawać produkty do koszyka, który przechowuje wybrane produkty do momentu finalizacji zakupu.
@@ -12,6 +13,7 @@ Finalizacja zakupu: Po dodaniu produktów do koszyka, użytkownik przechodzi do 
 
 
 Interakcja z użytkownikiem:
+
 Strona główna: Zawiera przegląd najnowszych produktów, promocji i kategorii.
 Strona produktu: Zawiera szczegóły dotyczące produktu, zdjęcia, ceny oraz przyciski do dodania do koszyka.
 Koszyk: Wyświetla produkty dodane do koszyka, umożliwia edytowanie ilości lub usuwanie produktów.
