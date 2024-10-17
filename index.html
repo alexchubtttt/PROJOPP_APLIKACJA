@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function obliczKwoteZVAT(kwotaNetto, stawkaVAT) {
+            return kwotaNetto + (kwotaNetto * stawkaVAT);
+                }
+
+            let kwotaNetto = 100;
+            let stawkaVAT = 0.2;
+
+            document.write(obliczKwoteZVAT(kwotaNetto, stawkaVAT));
+
+    </script>
 </body>
 </html>
