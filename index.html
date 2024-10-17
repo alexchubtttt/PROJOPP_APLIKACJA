@@ -16,6 +16,47 @@
 
             document.write(obliczKwoteZVAT(kwotaNetto, stawkaVAT));
 
+
+
+
+           
+            class Invoice {
+                constructor(amount, customerName) {
+                    this.amount = amount;
+                    this.customerName = customerName;
+                }
+            }
+
+            class PaymentProcessor {
+                processPayment(invoice) {
+                    throw new Error("Error");
+                }
+            }
+
+            class CreditCardPaymentProcessor extends PaymentProcessor {
+                processPayment(invoice) {
+                    document.write(`Przetwarzanie płatności kartą w wysokości $${invoice.amount} dla ${invoice.customerName}<br>`);
+                }
+            }
+
+            class EmailService {
+                sendEmail(invoice) {
+                    document.write(`Wysyłanie e-maila do ${invoice.customerName} na temat faktury.<br>`);
+                }
+            }
+
+            const invoice = new Invoice(100, "Jan Kowalski");
+
+            const creditCardProcessor = new CreditCardPaymentProcessor();
+            creditCardProcessor.processPayment(invoice);
+
+            const emailService = new EmailService();
+            emailService.sendEmail(invoice);
+
+
+    
+
+
     </script>
 </body>
 </html>
