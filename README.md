@@ -21,6 +21,10 @@ Logowanie się: Pozwala użytkownikom zalogować się na stronie.
 
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 v0.02 - nadanie sensownych nazw, przede wszystkim ta zasada dotyczy zmienne klasy i funkcje. To jest bardzo ważna praktyka pozwalająca zrozumieć co w sobie przechowuje np. zmienna, zwiększa czytelność i poprawność napisanego kodu.
 
 v0.04 - w tej wersji wykorzystałem metodę SOLID, poprawia strukturę i jakość kodu. Dzięki SOLID kod staje się łatwy w utrzymaniu i bardziej czytelny.
