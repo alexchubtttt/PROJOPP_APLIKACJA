@@ -71,6 +71,24 @@
         const user = new UserProfile("Jan Kowalski", "jan.kowalski.com");
         user.updateEmail("jan1.kowalski.com");
 
+        
+
+
+            function calculateTotalPrice(price, isMember, category) {
+            const discounts = {
+                'electronics': isMember ? 0.1 : (price > 1000 ? 0.2 : 0.05),
+                'clothing': isMember ? 0.15 : (price > 500 ? 0.1 : 0.05),
+                'groceries': price > 100 ? 0.15 : 0
+            };
+
+            
+            const discount = discounts[category] || 0;
+
+            return price * (1 - discount);
+        }
+
+
+
 
 
 
