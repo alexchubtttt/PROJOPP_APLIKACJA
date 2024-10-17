@@ -54,7 +54,26 @@
             emailService.sendEmail(invoice);
 
 
-    
+            
+
+            class UserProfile {
+            constructor(name, email) {
+                this.name = name;
+                this.email = email;
+            }
+
+            updateEmail(newEmail) {
+                this.email = newEmail;
+                document.write(`Email zaktualizowany na: ${this.email}<br>`);
+            }
+        }
+
+        const user = new UserProfile("Jan Kowalski", "jan.kowalski.com");
+        user.updateEmail("jan1.kowalski.com");
+
+
+
+
 
 
     </script>
