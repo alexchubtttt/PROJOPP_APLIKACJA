@@ -1,0 +1,175 @@
+a {
+    text-decoration: 0;
+}
+
+p {
+    margin:0;
+}
+ 
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    color:aliceblue;
+}
+
+nav .headSoc {
+    height: 100px;
+    background-color: #f6f7f7;
+}
+
+
+
+nav .headSoc .socIcons > div {
+   height: 20px;
+   width: 20px;
+   margin: 0 5px;
+}
+
+
+
+
+
+
+nav .headSoc .myProfile a img {
+    margin-right: 20px;
+}
+
+nav .headSoc .myProfile p {
+    margin-right: 20px;
+}
+
+nav .headSoc .myProfile a:hover p {
+    color:#f0a410;
+    transition:0.3 all ease; 
+    transform:  scale(1.1, 1.1);
+}
+
+nav .header {
+    height: 84px;
+    border-bottom: 1px solid #f6f7f7;
+}
+
+nav .header .container {
+    height:100px; 
+}
+
+nav .header .logo img {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    position: absolute; 
+    top: 9%;
+}
+
+.myProfile {
+    position: absolute;
+    top: 40px;
+    right: 350px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    
+    
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container img {
+    margin-bottom: -8px;
+}
+
+.img-container figcaption {
+    font-size: 13px;
+    margin-top: -8px;
+}
+
+.soc { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.margin { 
+    margin-right: 5px;
+}
+
+
+
+#hoverfc {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.fcactive-hover {
+   
+    visibility: hidden;
+    position: absolute;
+
+
+    top: 0%;
+    left: 0%;
+    transition: 0.1s ease;
+
+    
+}
+
+#hoverfc:hover .fcactive {
+   
+    visibility: hidden;
+ }
+
+ #hoverfc:hover .fcactive-hover {
+    visibility: visible;
+ }
+
+
+
+
+
+
+
+
+
+#hovertg {
+    position:absolute;
+    top:30%;
+    left: -0.5px;
+    transform: translate(-95%, -40%);
+
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+ .tgactive-hover {
+    padding-left:9px;
+    visibility: hidden;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.1s ease;
+
+ }
+
+ #hovertg:hover .tgactive {
+    visibility: hidden;
+
+ }
+
+ #hovertg:hover .tgactive-hover {
+    visibility: visible;
+ }

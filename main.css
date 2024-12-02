@@ -1,0 +1,322 @@
+.block1 .menu{
+    width: 230px;
+}
+.block1 {
+    justify-content: left;
+    align-items:flex-start ;
+}
+
+.block1 .menu a {
+    display: block;
+    text-decoration: none;
+    color:#7b7b7d ;
+    font-size:  1.125em; 
+    padding:12px 25px;
+    border-radius: 20px;
+
+}
+
+.block1 .menu a:hover,
+.block1 .menu a:active {
+    color:azure;
+    font-weight: bold;
+    background-color:#ebb217 ;
+    
+}
+
+.block1 .items .sort p {
+    color:black;
+    font: size 100;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.block1 .items .sort p a {
+    text-decoration: none;
+    color: black;
+}
+
+.block1 .items .sort p a:hover {
+    background: url("") no-repeat;
+    color:#ebb217;
+
+}  
+
+.block1 .items .sort .image-container {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.block1 .items {
+    padding-left:25px;
+}
+
+.block1 .items .sort{
+    margin-bottom: 25px;
+}
+
+
+.block1 .items .sort  {
+    margin-top: 5px;
+}
+
+.block1 .items .sort p a .image-container {
+    display: inline-block;
+}
+
+
+
+.block1 .items .sort p a:hover {
+    color:#ebb217;
+}
+
+.block1 .items .sort .image-container {
+    background: url("../images/down_png123.png");
+    font-weight: 600;
+}
+
+
+.block1 .items .boxes {
+    flex-wrap: wrap;
+}
+
+.block1 .items .boxes .box {
+    margin-bottom:28px;
+}
+
+.box {
+    width: 230px;
+}
+
+.d-Flex1 {
+    display: flex;
+}
+
+.p-atuty {
+    color: black;
+    text-align: center;
+}
+
+.p-atuty1 {
+    color: black;
+    
+}
+
+ .box figure figcaption{
+    padding-left: 20px;
+    color: black;
+}
+
+.box .figure  figcaption p{
+    font-size:15px;
+    color: black;
+}
+
+
+.box .figure  figcaption p span {
+    font-size: 1.250em;
+    font-weight: 600;
+}
+
+.box figure .title {
+    color:black;
+    font-size:16px;
+    padding-left: 23px;
+    margin-top: 10px; 
+}
+
+.box button {
+    width:100%;
+    padding:12px;
+    border-radius: 20px;
+    background-color:#ebb217 ;
+    color:#ffffff; 
+    border:none;
+    margin-top: 15px;
+}
+
+.box button:hover {
+    cursor: pointer; 
+}
+
+
+.pagination  {
+    display: inline-block;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+
+.pagination a:hover,
+.pagination a.active {
+    color:#ebb217;
+    font-weight:500;
+}
+
+.news h2, .adv h2 {
+ text-align: center;
+ margin: 70px 0;
+ color: #000;
+ font-size: 1.875em;
+ font-weight: 500;
+}
+
+
+.news .container {
+    display: flex;
+    margin-right: 50px;
+}
+
+
+.news .container .box {
+    margin-right:30px;
+}
+
+.news .container1 {
+    display: flex;
+    margin-left: 250px;
+    margin-bottom: 30px;
+}
+
+
+.news .container1 .box {
+    margin-right:30px;
+}
+
+.adv div p {
+    font-size: 1.125em;
+    color:#7b7b7d;
+    font-weight:300px;
+    max-width: 1500px;
+    margin-left: 100px;
+}
+
+.adv div p span {
+    font-weight: bold; 
+}
+
+.container-Fluid1 {
+    width: 100%;
+    margin-top: 200px;
+}
+
+
+
+.png {
+    height:150px;
+    width:auto;
+    margin-right: -30px;
+}
+
+.img {
+    margin-left: 20px;
+    height:150px;
+    width:auto;
+}
+
+.img {
+    margin-left: 20px;
+    height:150px;
+    width:auto;
+}
+
+.img {
+    margin-left: 20px;
+    height:150px;
+    width:auto;
+}
+
+
+
+
+ .d-Flex .www {
+    font-size:larger;
+}
+
+.d-Flex .ddd {
+    font-size: larger;
+    
+}
+
+.d-Flex .ttt {
+    font-size:larger;
+}
+
+.fff {
+    font-size:larger;
+}
+
+
+
+
+.adv {
+    margin-top: 50px;
+    margin-right: 80px;
+}
+
+.sub {
+    text-align:center;
+}
+
+.sub h2 {
+    text-align: center;
+    color:#7b7b7d;
+    margin-bottom: 0;
+}
+
+.sub  p {
+    text-align: center;
+    color:#7b7b7d;
+    font-size:larger;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.sub form div input {
+    border-radius: 20px;
+    font-size: 15px;
+
+}
+
+.sub form div input[type='email'] {
+    padding:15px 15px;
+    border:1px solid #000;
+    width: 260px;
+
+}
+
+.sub form div input[type='submit'] {
+    border:none;
+    padding:15px 15px;
+    width: 150px;
+    text-align: center ;
+    background-color: black;
+     color:#ffffff;
+     margin-left: 15px;
+    }
+
+.sub form div input[type='submit']:hover {
+    cursor:pointer;
+}
+
+.sub p {
+    font-size: 13px;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 60px;
+
+
+}
+
+.sub p a {
+    color: #9393f1;
+}
