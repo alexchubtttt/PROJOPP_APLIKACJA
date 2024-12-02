@@ -34,3 +34,77 @@ v0.06 - w tej wersji wykorzystałem metodę YAGNI, ponieważ pomaga w unikaniu n
 v0.08 - metoda KISS. Polega na unikaniu tworzenia zbędnej złożoności. Zasada ta promuje prostotę, przejrzystość i efektywność kodu.
 
 v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, ponieważ eliminuje zbędne powtórzenia kodu. Dzięki temu zmniejsza się ryzyko błędów, poprawia czytelność oraz ułatwia utrzymanie kodu.
+
+
+
+
+Dokumentacja projektu 40%:
+
+1. Opis projektu
+"Internetowy Market" to prototypowy sklep internetowy zaprojektowany w HTML, CSS i JavaScript. Celem projektu jest prezentacja prostego, funkcjonalnego interfejsu sklepu online, umożliwiającego użytkownikom:
+Przeglądanie katalogu produktów.
+Sortowanie produktów według ceny.
+Dodawanie produktów do koszyka.
+Śledzenie łącznej ceny w koszyku.
+
+
+2. Technologie
+Projekt został zbudowany w oparciu o następujące technologie:
+HTML5: struktura strony.
+CSS3: stylizacja strony, responsywność, animacje.
+JavaScript: logika interakcji użytkownika, modyfikacja DOM.
+
+
+3. Funkcjonalności
+Menu nawigacyjne:
+Linki
+Lista produktów:
+Przeglądanie produktów w formie katalogu.
+Sortowanie produktów według ceny.
+Koszyk:
+Dodawanie produktów do koszyka.
+Obliczanie łącznej ceny produktów w koszyku.
+Promocje i nowości:
+Sekcja z wyróżnionymi produktami.
+Newsletter:
+Formularz zapisu do newslettera z akceptacją regulaminu.
+
+
+4. Opis komponentów
+Nagłówek:
+Zawiera logo, menu nawigacyjne, wyszukiwarkę oraz ikonę koszyka z podglądem łącznej ceny. Jest zaprojektowany jako sticky, aby pozostawać widocznym podczas przewijania.
+
+Katalog produktów
+Lista produktów z możliwością sortowania według ceny. Każdy produkt zawiera:
+
+Obrazek
+Cenę
+Nazwę.
+Przycisk "Kupić"
+Koszyk
+Dynamiczne wyliczanie sumy cen produktów dodanych do koszyka, z aktualizacją widoczną w nagłówku
+
+Sekcje promocyjne:
+Dwie sekcje prezentujące najnowsze oferty i polecane produkty.
+
+Stopka:
+Zawiera linki do polityki prywatności, dane kontaktowe oraz ikony mediów społecznościowych.
+
+
+5. Interakcja z użytkowinikiem:
+Lista produktów
+Przyciski akcji:
+Każdy produkt posiada przycisk "Kupić". Po kliknięciu:
+Produkt zostaje dodany do koszyka.
+Licznik produktów w koszyku oraz łączna cena w nagłówku są natychmiast aktualizowane.
+
+
+7. Przyszły rozwój
+Rozszerzenie funkcjonalności koszyka:
+Edytowanie ilości produktów w koszyku.
+Usuwanie produktów z koszyka.
+Rozbudowa animacji dla interakcji użytkownika.
+Możliwość założenia konta.
+
+Data ostatniej aktualizacji: 2024-12-02
+
