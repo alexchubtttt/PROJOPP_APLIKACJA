@@ -36,7 +36,7 @@ v0.08 - metoda KISS. Polega na unikaniu tworzenia zbędnej złożoności. Zasada
 v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, ponieważ eliminuje zbędne powtórzenia kodu. Dzięki temu zmniejsza się ryzyko błędów, poprawia czytelność oraz ułatwia utrzymanie kodu.
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Dokumentacja projektu 40%:
 
