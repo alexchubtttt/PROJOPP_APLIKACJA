@@ -18,3 +18,19 @@ Strona główna: Zawiera przegląd najnowszych produktów, promocji i kategorii.
 Strona produktu: Zawiera szczegóły dotyczące produktu, zdjęcia, ceny oraz przyciski do dodania do koszyka.
 Koszyk: Wyświetla produkty dodane do koszyka, umożliwia edytowanie ilości lub usuwanie produktów.
 Logowanie się: Pozwala użytkownikom zalogować się na stronie.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+v0.02 - nadanie sensownych nazw, przede wszystkim ta zasada dotyczy zmienne klasy i funkcje. To jest bardzo ważna praktyka pozwalająca zrozumieć co w sobie przechowuje np. zmienna, zwiększa czytelność i poprawność napisanego kodu.
+
+v0.04 - w tej wersji wykorzystałem metodę SOLID, poprawia strukturę i jakość kodu. Dzięki SOLID kod staje się łatwy w utrzymaniu i bardziej czytelny.
+
+v0.06 - w tej wersji wykorzystałem metodę YAGNI, ponieważ pomaga w unikaniu nadmiernej rozbudowy kodu oraz niepotrzebnego dodawania funkcji.
+
+v0.08 - metoda KISS. Polega na unikaniu tworzenia zbędnej złożoności. Zasada ta promuje prostotę, przejrzystość i efektywność kodu.
+
+v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, ponieważ eliminuje zbędne powtórzenia kodu. Dzięki temu zmniejsza się ryzyko błędów, poprawia czytelność oraz ułatwia utrzymanie kodu.
