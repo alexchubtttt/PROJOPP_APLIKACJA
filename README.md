@@ -1,4 +1,4 @@
-##Nazwa aplikacji: Sklep Internetowy
+## Nazwa aplikacji: Sklep Internetowy
 
 Sklep Internetowy to aplikacja mająca na celu dać możliwość użytkownikom zakupu techniki elektronicznej online w sposób prosty i wygodny. Aplikacja pozwala na przeglądanie dostępnych produktów, dodawanie ich do koszyka, użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto, składanie zamówień online.
 
@@ -12,7 +12,7 @@ Dodawanie do koszyka: Użytkownicy mogą dodawać produkty do koszyka, który pr
 Finalizacja zakupu: Po dodaniu produktów do koszyka, użytkownik przechodzi do procesu realizacji zamówienia. W tym etapie wprowadza dane dostawy, wybiera metodę płatności i finalizuje zamówienie.
 
 
-##Interakcja z użytkownikiem:
+## Interakcja z użytkownikiem:
 
 Strona główna: Zawiera przegląd najnowszych produktów, promocji i kategorii.
 Strona produktu: Zawiera szczegóły dotyczące produktu, zdjęcia, ceny oraz przyciski do dodania do koszyka.
@@ -37,9 +37,9 @@ v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, poniewa�
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-##Dokumentacja projektu 40%:
+## Dokumentacja projektu 40%:
 
-#1. Opis projektu
+# 1. Opis projektu
 "Internetowy Market" to prototypowy sklep internetowy zaprojektowany w HTML, CSS i JavaScript. Celem projektu jest prezentacja prostego, funkcjonalnego interfejsu sklepu online, umożliwiającego użytkownikom:
 Przeglądanie katalogu produktów.
 Sortowanie produktów według ceny.
@@ -47,14 +47,14 @@ Dodawanie produktów do koszyka.
 Śledzenie łącznej ceny w koszyku.
 
 
-#2. Technologie
+# 2. Technologie
 Projekt został zbudowany w oparciu o następujące technologie:
 HTML5: struktura strony.
 CSS3: stylizacja strony, responsywność, animacje.
 JavaScript: logika interakcji użytkownika, modyfikacja DOM.
 
 
-#3. Funkcjonalności
+# 3. Funkcjonalności
 Menu nawigacyjne:
 Linki
 Lista produktów:
@@ -90,7 +90,7 @@ Stopka:
 Zawiera linki do polityki prywatności, dane kontaktowe oraz ikony mediów społecznościowych.
 
 
-#5. Interakcja z użytkowinikiem:
+# 5. Interakcja z użytkowinikiem:
 Lista produktów
 Przyciski akcji:
 Każdy produkt posiada przycisk "Kupić". Po kliknięciu:
@@ -98,7 +98,7 @@ Produkt zostaje dodany do koszyka.
 Licznik produktów w koszyku oraz łączna cena w nagłówku są natychmiast aktualizowane.
 
 
-#7. Przyszły rozwój
+# 6. Przyszły rozwój
 Rozszerzenie funkcjonalności koszyka:
 Edytowanie ilości produktów w koszyku.
 Usuwanie produktów z koszyka.
