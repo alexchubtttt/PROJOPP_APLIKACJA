@@ -1,4 +1,4 @@
-Nazwa aplikacji: Sklep Internetowy
+##Nazwa aplikacji: Sklep Internetowy
 
 Sklep Internetowy to aplikacja mająca na celu dać możliwość użytkownikom zakupu techniki elektronicznej online w sposób prosty i wygodny. Aplikacja pozwala na przeglądanie dostępnych produktów, dodawanie ich do koszyka, użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto, składanie zamówień online.
 
@@ -12,7 +12,7 @@ Dodawanie do koszyka: Użytkownicy mogą dodawać produkty do koszyka, który pr
 Finalizacja zakupu: Po dodaniu produktów do koszyka, użytkownik przechodzi do procesu realizacji zamówienia. W tym etapie wprowadza dane dostawy, wybiera metodę płatności i finalizuje zamówienie.
 
 
-Interakcja z użytkownikiem:
+##Interakcja z użytkownikiem:
 
 Strona główna: Zawiera przegląd najnowszych produktów, promocji i kategorii.
 Strona produktu: Zawiera szczegóły dotyczące produktu, zdjęcia, ceny oraz przyciski do dodania do koszyka.
@@ -22,7 +22,6 @@ Logowanie się: Pozwala użytkownikom zalogować się na stronie.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 v0.02 - nadanie sensownych nazw, przede wszystkim ta zasada dotyczy zmienne klasy i funkcje. To jest bardzo ważna praktyka pozwalająca zrozumieć co w sobie przechowuje np. zmienna, zwiększa czytelność i poprawność napisanego kodu.
@@ -38,9 +37,9 @@ v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, poniewa�
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Dokumentacja projektu 40%:
+##Dokumentacja projektu 40%:
 
-1. Opis projektu
+#1. Opis projektu
 "Internetowy Market" to prototypowy sklep internetowy zaprojektowany w HTML, CSS i JavaScript. Celem projektu jest prezentacja prostego, funkcjonalnego interfejsu sklepu online, umożliwiającego użytkownikom:
 Przeglądanie katalogu produktów.
 Sortowanie produktów według ceny.
@@ -48,14 +47,14 @@ Dodawanie produktów do koszyka.
 Śledzenie łącznej ceny w koszyku.
 
 
-2. Technologie
+#2. Technologie
 Projekt został zbudowany w oparciu o następujące technologie:
 HTML5: struktura strony.
 CSS3: stylizacja strony, responsywność, animacje.
 JavaScript: logika interakcji użytkownika, modyfikacja DOM.
 
 
-3. Funkcjonalności
+#3. Funkcjonalności
 Menu nawigacyjne:
 Linki
 Lista produktów:
@@ -70,7 +69,7 @@ Newsletter:
 Formularz zapisu do newslettera z akceptacją regulaminu.
 
 
-4. Opis komponentów
+#4. Opis komponentów
 Nagłówek:
 Zawiera logo, menu nawigacyjne, wyszukiwarkę oraz ikonę koszyka z podglądem łącznej ceny. Jest zaprojektowany jako sticky, aby pozostawać widocznym podczas przewijania.
 
@@ -79,7 +78,7 @@ Lista produktów z możliwością sortowania według ceny. Każdy produkt zawier
 
 Obrazek
 Cenę
-Nazwę.
+Nazwę
 Przycisk "Kupić"
 Koszyk
 Dynamiczne wyliczanie sumy cen produktów dodanych do koszyka, z aktualizacją widoczną w nagłówku
@@ -91,7 +90,7 @@ Stopka:
 Zawiera linki do polityki prywatności, dane kontaktowe oraz ikony mediów społecznościowych.
 
 
-5. Interakcja z użytkowinikiem:
+#5. Interakcja z użytkowinikiem:
 Lista produktów
 Przyciski akcji:
 Każdy produkt posiada przycisk "Kupić". Po kliknięciu:
@@ -99,7 +98,7 @@ Produkt zostaje dodany do koszyka.
 Licznik produktów w koszyku oraz łączna cena w nagłówku są natychmiast aktualizowane.
 
 
-7. Przyszły rozwój
+#7. Przyszły rozwój
 Rozszerzenie funkcjonalności koszyka:
 Edytowanie ilości produktów w koszyku.
 Usuwanie produktów z koszyka.
