@@ -37,7 +37,7 @@ v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, poniewa�
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Dokumentacja projektu 40%:
+### Dokumentacja projektu 40%:
 
 # 1. Opis projektu
 "Internetowy Market" to prototypowy sklep internetowy zaprojektowany w HTML, CSS i JavaScript. Celem projektu jest prezentacja prostego, funkcjonalnego interfejsu sklepu online, umożliwiającego użytkownikom:
