@@ -3,8 +3,8 @@
 Sklep Internetowy to aplikacja mająca na celu dać możliwość użytkownikom zakupu techniki elektronicznej online w sposób prosty i wygodny. Aplikacja pozwala na przeglądanie dostępnych produktów, dodawanie ich do koszyka, użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto, składanie zamówień online.
 
 
-Zasada działania
-Aplikacja działa w kilku kluczowych krokach:
+## Zasada działania
+## Aplikacja działa w kilku kluczowych krokach:
 
 Rejestracja i logowanie: Użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto. 
 Przeglądanie produktów: Użytkownicy mogą przeglądać produkty dostępne w sklepie. Produkty są pogrupowane w kategorie, co ułatwia wyszukiwanie. Każdy produkt ma opis, zdjęcia i cenę.
@@ -37,9 +37,10 @@ v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, poniewa�
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-###### Dokumentacja projektu 40%:
 
-# 1. Opis projektu
+## Dokumentacja projektu 40%:
+
+### 1. Opis projektu
 "Internetowy Market" to prototypowy sklep internetowy zaprojektowany w HTML, CSS i JavaScript. Celem projektu jest prezentacja prostego, funkcjonalnego interfejsu sklepu online, umożliwiającego użytkownikom:
 Przeglądanie katalogu produktów.
 Sortowanie produktów według ceny.
@@ -47,14 +48,14 @@ Dodawanie produktów do koszyka.
 Śledzenie łącznej ceny w koszyku.
 
 
-# 2. Technologie
+### 2. Technologie
 Projekt został zbudowany w oparciu o następujące technologie:
 HTML5: struktura strony.
 CSS3: stylizacja strony, responsywność, animacje.
 JavaScript: logika interakcji użytkownika, modyfikacja DOM.
 
 
-# 3. Funkcjonalności
+### 3. Funkcjonalności
 Menu nawigacyjne:
 Linki
 Lista produktów:
@@ -69,7 +70,7 @@ Newsletter:
 Formularz zapisu do newslettera z akceptacją regulaminu.
 
 
-#4. Opis komponentów
+### 4. Opis komponentów
 Nagłówek:
 Zawiera logo, menu nawigacyjne, wyszukiwarkę oraz ikonę koszyka z podglądem łącznej ceny. Jest zaprojektowany jako sticky, aby pozostawać widocznym podczas przewijania.
 
@@ -90,7 +91,7 @@ Stopka:
 Zawiera linki do polityki prywatności, dane kontaktowe oraz ikony mediów społecznościowych.
 
 
-# 5. Interakcja z użytkowinikiem:
+### 5. Interakcja z użytkowinikiem:
 Lista produktów
 Przyciski akcji:
 Każdy produkt posiada przycisk "Kupić". Po kliknięciu:
@@ -98,7 +99,7 @@ Produkt zostaje dodany do koszyka.
 Licznik produktów w koszyku oraz łączna cena w nagłówku są natychmiast aktualizowane.
 
 
-# 6. Przyszły rozwój
+### 6. Przyszły rozwój
 Rozszerzenie funkcjonalności koszyka:
 Edytowanie ilości produktów w koszyku.
 Usuwanie produktów z koszyka.
