@@ -4,7 +4,7 @@ Sklep Internetowy to aplikacja mająca na celu dać możliwość użytkownikom z
 
 
 ## Zasada działania
-## Aplikacja działa w kilku kluczowych krokach:
+### Aplikacja działa w kilku kluczowych krokach:
 
 Rejestracja i logowanie: Użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto. 
 Przeglądanie produktów: Użytkownicy mogą przeglądać produkty dostępne w sklepie. Produkty są pogrupowane w kategorie, co ułatwia wyszukiwanie. Każdy produkt ma opis, zdjęcia i cenę.
@@ -36,6 +36,7 @@ v0.10 - metoda DRY.  Jest niezbędną metodą w każdym oprogramowaniu, poniewa�
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 ## Dokumentacja projektu 40%:
