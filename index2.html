@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="PL-pl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internet_market</title>
+    <link rel="stylesheet" type="text/css" href="header_footer.css"/>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="layout.css"/>
+</head>
+<body>
+     
+         <header>
+      
+              <div class="container-head d-Flex">
+               <img src="images/images.png" alt="logo" class="img"/>
+               <img class="burgerIcon" src="images/2473588.png" alt="menu"/>
+               <nav class="menu">
+                 <a href="index.html"> Katalog </a>
+                 <a class="active" href="index2.html"> O nas </a>
+                 <a href="index3.html"> Opłata i dostawa </a>
+                 <a href="#">Skontaktuj się z nami </a>
+               </nav>
+               <form name="search" action="#" mathod="get">
+                <div class="d-Flex">
+                    <input type="text" name="search" placeholder="wyszukiwanie">
+                    <input type="submit" name="search" value=".">
+                </div>
+                </form>
+                <div class="cart d-Flex">
+                    <img src="images/3081986.png" alt="cart" id="del">
+                        <div style="margin-top: 10px;">
+                          <p class="p23" id="pay"> 0 zł</p>
+                          <a href="#">Złożyć zamówienie</a> <br>
+                        </div>
+                  </div>
+                </div> 
+                </div>
+              </div> 
+    </header>
+    
+     <main class="main1">
+        <h1 style="color: black; text-align: center; margin-top: 40px;">Autorem strony jest: Oleksandr Chub 2AP </h1>
+        <div class="container copyrights">
+            <p style="color: rgb(1, 1, 1); text-align: center;">Wszelkie prawa zastrzeżone &copy; 2025</p>
+          </div> 
+     </main>
+
+    <footer class="container-Fluid">
+      <div class="container d-Flex">
+         <div class="left d-Flex">
+           <figure>
+             <img class="image-container" src="images/images.png" alt="logo"/>
+              <figcaption>internet sklep</figcaption>
+           </figure>
+           <nav>
+             <a href="index.html">Katalog</a>
+             <a class="active" href="index2.html"> o nas </a>
+             <a href="index3.html"> opłata i dostawa </a>
+             <a href="#">  polityka i prywatność </a>
+             
+           </nav>
+         </div>
+           <div class="right">
+              <form name="search" action="#" method="get">
+                <div class="d-Flex">
+                  <input type="text" name="search" placeholder="wyszukiwanie" /> 
+                   <input type="submit" name="search" value="."/>
+                </div>
+              </form>
+              <div> 
+              <p>oglądajcie nas w media społeczeństwu: </p>
+                <a href="#" class="box insta"></a>
+                <a href="#" class="box telegram" ></a>
+                <a href="#" class="box facebook"></a>
+              </div>
+              </div>
+           </div>
+      </div>
+      <div class="container copyrights">
+        <p style="color: white">Wszelkie prawa zastrzeżone &copy; 2025</p>
+      </div> 
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    // Pobierz zapisaną cenę koszyka z localStorage
+    const savedTotal = localStorage.getItem("cartTotal");
+    if (savedTotal) {
+        document.getElementById("pay").textContent = `${savedTotal} zł`;
+    }
+
+    // Nasłuchiwanie zmian w localStorage (jeśli użytkownik otworzy kilka zakładek)
+    window.addEventListener("storage", function (event) {
+        if (event.key === "cartTotal") {
+            document.getElementById("pay").textContent = `${event.newValue} zł`;
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

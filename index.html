@@ -7,22 +7,19 @@
     <title>internet_market</title>
     <link rel="stylesheet" type="text/css" href="header_footer.css"/>
     <link rel="stylesheet" type="text/css" href="main.css"/>
-    <link rel="stylesheet" type="text/css" href="popup.css"/>
     <link rel="stylesheet" type="text/css" href="layout.css"/>
-    
-    <link rel="stylesheet" href="mobile.css" type="text/css">
 </head>
 <body>
      
          <header>
       
-              <div class="container d-Flex">
+              <div class="container-head d-Flex">
                <img src="images/images.png" alt="logo" class="img"/>
                <img class="burgerIcon" src="images/2473588.png" alt="menu"/>
                <nav class="menu">
-                 <a class="active" href="#"> Katalog </a>
-                 <a href="#"> O nas </a>
-                 <a href="#"> Opłata i dostawa </a>
+                 <a href="index.html" class="active" href="#"> Katalog </a>
+                 <a href="index2.html"> O nas </a>
+                 <a href="index3.html"> Opłata i dostawa </a>
                  <a href="#">Skontaktuj się z nami </a>
                </nav>
                <form name="search" action="#" mathod="get">
@@ -32,10 +29,10 @@
                 </div>
                 </form>
                 <div class="cart d-Flex">
-                      <img src="images/3081986.png" alt="cart">
-                      <div>
+                  <img src="images/3081986.png" alt="cart" id="del" style="cursor: pointer">
+                      <div style="margin-top: 10px;">
                         <p class="p23" id="pay"> 0 zł</p>
-                        <a href="#">Złożyć zamówienie</a>
+                        <a href="#">Złożyć zamówienie</a> <br>
                       </div>
                 </div>
               </div> 
@@ -53,12 +50,33 @@
           </nav>
           <div class="items">
            <div class="sort"> 
-                 <p>Sortuj według:   <a href="#"> cena </a> <img src="images/images (1).png" alt="up-png" class="image-container" />  </p>
+            <p>Sortuj według: 
+              <a href="#" id="cena"> cena </a> 
+              <a href="#" id="demo">
+                  <img src="images/images (1).png" alt="up-png" class="image-container"/>
+              </a>
+          </p>
+        </div>
+        <div class="boxes-container">
+          <div class="boxes d-Flex">
+            <div class="box">
+              <figure>
+                <div class="img-apple">
+                  <img src="images/iphone15(2).png" alt="iphone" height="260px" style="position: relative; top: 20px; margin-bottom: 45px;">
+                </div>
+                <figcaption>
+                    <p><span class="price">5000</span> zł </p>
+                </figcaption>
+                <p class="title">iphone 15</p>
+                <button> Kupić </button>
+              </figure>
            </div>
-           <div class="boxes d-Flex">
+
                <div class="box">
                   <figure>
-                    <img src="images/iphone_14.jpg" alt="iphone" height="300px" >
+                    <div class="img-apple">
+                      <img src="images/iphone14.png" alt="iphone" height="300px" >
+                    </div>
                     <figcaption>
                         <p><span class="price">3500</span> zł </p>
                     </figcaption>
@@ -69,7 +87,9 @@
 
                <div class="box">
                 <figure>
-                  <img src="images/iPhone-13-PNG-HD.png" alt="iphone" height="300px" >
+                  <div class="img-apple">
+                    <img src="images/iPhone-13-PNG-HD.png" alt="iphone" height="300px" >
+                  </div>
                   <figcaption>
                       <p><span class="price">3000</span> zł </p>
                   </figcaption>
@@ -80,7 +100,22 @@
 
              <div class="box">
               <figure>
-                <img src="images/iphone _12.png" alt="iphone" height="300px" >
+                <div class="img-apple">
+                  <img src="images/iphone-12-mini-purple.png" alt="iphone" height="320px" style="margin-top: -20px;">
+                </div>
+                <figcaption>
+                    <p><span class="price">2700</span> zł </p>
+                </figcaption>
+                <p class="title">iphone 12 mini</p>
+                <button> Kupić </button>
+              </figure>
+           </div>
+
+             <div class="box">
+              <figure>
+                <div class="img-apple">
+                  <img src="images/iphone12.png" alt="iphone" height="300px" >
+                </div>
                 <figcaption>
                     <p><span class="price">2600</span> zł </p>
                 </figcaption>
@@ -91,7 +126,9 @@
 
            <div class="box">
             <figure>
-              <img src="images/iphone 11_2.png" alt="iphone" height="300px" >
+              <div class="img-apple">
+                <img src="images/iphone11(3).png" alt="iphone" height="310px" style="position: relative; bottom: 20px; margin-top: -10px;">
+              </div>
               <figcaption>
                   <p><span class="price">2300</span> zł </p>
               </figcaption>
@@ -102,29 +139,23 @@
 
          <div class="box">
           <figure>
-            <img src="images/iphone x.png" alt="iphone" height="300px" >
+            <div class="img-apple">
+              <img src="images/iphone10(2).png" alt="iphone" height="300px" >
+            </div>
             <figcaption>
                 <p><span class="price">2000</span> zł </p>
             </figcaption>
-            <p class="title">iphone X</p>
+            <p class="title">iphone 10</p>
             <button> Kupić </button>
           </figure>
        </div>
 
-       <div class="box">
-        <figure>
-          <img src="images/iphone_12mini.webp" alt="iphone" height="300px" >
-          <figcaption>
-              <p><span class="price">2700</span> zł </p>
-          </figcaption>
-          <p class="title">iphone 12 mini</p>
-          <button> Kupić </button>
-        </figure>
-     </div>
 
      <div class="box">
       <figure>
-        <img src="images/iphone-8-silver-2.jpg" alt="iphone" height="300px" >
+        <div class="img-apple">
+          <img src="images/iphone-8-silver-2.jpg" alt="iphone" height="250px" style="position: relative; top: 20px; margin-bottom: 50px;">
+        </div>
         <figcaption>
             <p><span class="price">1800</span> zł </p>
         </figcaption>
@@ -132,83 +163,79 @@
         <button> Kupić </button>
       </figure>
    </div>
-
-   <div class="box">
-    <figure>
-      <img src="images/iphone15.jpg_large" alt="iphone" height="300px" >
-      <figcaption>
-          <p><span class="price">5000</span> zł </p>
-      </figcaption>
-      <p class="title">iphone 15</p>
-      <button> Kupić </button>
-    </figure>
- </div>
+        </div>
            </div>
           </div>
         </div>
 
       </div>
       <div class="pagination">
-         <img src="images/first-page-1.png" alt="first-page" height="20px" />
-         <img src="images/icon-prev.png" alt="prev-page" height="20px" />
+        <a href=""> <img src="images/left-arrow.png" alt="prev-page" height="20px" />  </a>
          <a class="active" href="#">1</a>
          <a href="#">2</a>
          <a href="#">3</a>
          <a href="#">4</a>
          <a href="#">5</a>
-         <img src="images/icon2.png" alt="first-page" height="20px"/>
-         <img src="images/next page arrow.png" alt="prev-page" height="20px" />
+         <a href=""><img src="images/right-arrow.png" alt="first-page" height="20px"/></a>
       </div>
         
       <div class="news">
         <h2>NOWE OFERTY i ZNIŻKI</h2>
-
-        <div class="container">
-        <div class="box">
+          <div class="container">
+            <div class="box">
+              <figure>
+                <div class="img-apple">
+                  <img src="images/pngtree-airpods-png-image_9149137.png" alt="airpods" height="300px" >
+                </div>
+                <figcaption>
+                    <p><span class="price">1000</span> zł </p>
+                </figcaption>
+                <p class="title">Słuchawki</p>
+                <button> Kupić </button>
+              </figure>
+           </div>
+    
+           <div class="box">
+            <figure>
+              <div class="img-apple">
+                <img src="images/png omg.png" alt="Ladowarka" height="300px" >
+              </div>
+              <figcaption>
+                  <p><span class="price">150</span> zł </p>
+              </figcaption>
+              <p class="title">Ładowarka</p>
+              <button> Kupić </button>
+            </figure>
+         </div>
+    
+         <div class="box">
           <figure>
-            <img src="images/pngtree-airpods-png-image_9149137.png" alt="airpods" height="300px" >
+            <div class="img-apple">
+              <img src="images/PNG ETUI.jpg" alt="etui" height="300px" >
+            </div>
             <figcaption>
-                <p><span class="price">1000</span> zł </p>
+                <p><span class="price">150</span> zł </p>
             </figcaption>
-            <p class="title">Słuchawki</p>
+            <p class="title">wszystkie etui dla IP</p>
             <button> Kupić </button>
           </figure>
        </div>
-
+    
        <div class="box">
         <figure>
-          <img src="images/png omg.png" alt="Ladowarka" height="300px" >
+          <div class="img-apple">
+            <img src="images/uuu.png" alt="iphone" height="300px" >
+          </div>
           <figcaption>
-              <p><span class="price">150</span> zł </p>
+              <p><span class="price">200</span> zł </p>
           </figcaption>
-          <p class="title">Ładowarka</p>
+          <p class="title">szybki dla wszystkich IP</p>
           <button> Kupić </button>
         </figure>
      </div>
-
-     <div class="box">
-      <figure>
-        <img src="images/PNG ETUI.jpg" alt="etui" height="300px" >
-        <figcaption>
-            <p><span class="price">150</span> zł </p>
-        </figcaption>
-        <p class="title">wszystkie etui dla IP</p>
-        <button> Kupić </button>
-      </figure>
-   </div>
-
-   <div class="box">
-    <figure>
-      <img src="images/uuu.png" alt="iphone" height="300px" >
-      <figcaption>
-          <p><span class="price">200</span> zł </p>
-      </figcaption>
-      <p class="title">szybki dla wszystkich IP</p>
-      <button> Kupić </button>
-    </figure>
- </div>
-
-</div>
+    
+        </div>
+        
 
 <div class="adv">
   <h2>NASZE ATUTY</h2>
@@ -245,57 +272,56 @@
       </div>
 
 
-      
-
       <div class="news">
         <h2> NAJBARDZIEJ POPULARNE i POLECALNE</h2>
-
-        <div class="container1">
-        <div class="box">
+        <div class="boxes-container">
+          <div class="container1">
+            <div class="box">
+              <figure>
+                <img src="images/pngtree-airpods-png-image_9149137.png" alt="airpods" height="300px" >
+                <figcaption>
+                    <p><span class="price">1000</span> zł </p>
+                </figcaption>
+                <p class="title">Słuchawki</p>
+                <button> Kupić </button>
+              </figure>
+           </div>
+    
+           <div class="box">
+            <figure>
+              <img src="images/png omg.png" alt="Ladowarka" height="300px" >
+              <figcaption>
+                  <p><span class="price">150</span> zł </p>
+              </figcaption>
+              <p class="title">Ładowarka</p>
+              <button> Kupić </button>
+            </figure>
+         </div>
+    
+         <div class="box">
           <figure>
-            <img src="images/pngtree-airpods-png-image_9149137.png" alt="airpods" height="300px" >
+            <img src="images/PNG ETUI.jpg" alt="etui" height="300px" >
             <figcaption>
-                <p><span class="price">1000</span> zł </p>
+                <p><span class="price">150</span> zł </p>
             </figcaption>
-            <p class="title">Słuchawki</p>
+            <p class="title">wszystkie etui dla IP</p>
             <button> Kupić </button>
           </figure>
        </div>
-
+    
        <div class="box">
         <figure>
-          <img src="images/png omg.png" alt="Ladowarka" height="300px" >
+          <img src="images/uuu.png" alt="iphone" height="300px" >
           <figcaption>
-              <p><span class="price">150</span> zł </p>
+              <p><span class="price">200</span> zł </p>
           </figcaption>
-          <p class="title">Ładowarka</p>
+          <p class="title">szybki dla wszystkich IP</p>
           <button> Kupić </button>
         </figure>
      </div>
-
-     <div class="box">
-      <figure>
-        <img src="images/PNG ETUI.jpg" alt="etui" height="300px" >
-        <figcaption>
-            <p><span class="price">150</span> zł </p>
-        </figcaption>
-        <p class="title">wszystkie etui dla IP</p>
-        <button> Kupić </button>
-      </figure>
-   </div>
-
-   <div class="box">
-    <figure>
-      <img src="images/uuu.png" alt="iphone" height="300px" >
-      <figcaption>
-          <p><span class="price">200</span> zł </p>
-      </figcaption>
-      <p class="title">szybki dla wszystkich IP</p>
-      <button> Kupić </button>
-    </figure>
- </div>
-
-</div>
+    </div>
+        </div>
+        
 <hr>
 
 <div class="sub">
@@ -322,9 +348,9 @@
               <figcaption>internet sklep</figcaption>
            </figure>
            <nav>
-            <a class="active" href="#">Katalog</a>
-             <a href="#"> o nas </a>
-             <a href="#"> opłata i dostawa </a>
+            <a class="active" href="index.html">Katalog</a>
+             <a href="index2.html"> o nas </a>
+             <a href="index3.html"> opłata i dostawa </a>
              <a href="#">  polityka i prywatność </a>
              
            </nav>
@@ -333,7 +359,7 @@
               <form name="search" action="#" method="get">
                 <div class="d-Flex">
                   <input type="text" name="search" placeholder="wyszukiwanie" /> 
-                   <input type="submit" name="search"/>
+                   <input type="submit" name="search" value="."/>
                 </div>
               </form>
               <div> 
@@ -346,31 +372,136 @@
            </div>
       </div>
       <div class="container copyrights">
-        <p>Wszelkie prawa zastrzeżone &copy; 2023</p>
+        <p style="color: white">Wszelkie prawa zastrzeżone &copy; 2023</p>
       </div> 
     </footer>
 <script>
- 
 
-  function updateCartPrice(price) {
-      const payElement = document.getElementById("pay"); 
-      const currentPrice = parseFloat(payElement.textContent.replace("zł", "").trim()) || 0; 
-      const newPrice = currentPrice + price; 
-      payElement.textContent = `${newPrice.toFixed(2)} zł`; 
-  }
+const cartItemsKey = "cartItems_index2";  // Unikalny klucz dla index2
+const cartTotalKey = "cartTotal_index2";  // Unikalny klucz dla index
 
-  const buttons = document.querySelectorAll("button");
+let cena = document.getElementById("cena");  // Element wskazujący kryterium sortowania
+let demo = document.getElementById("demo");  // Przycisk sortowania
 
-  
-  buttons.forEach((button) => {
-      button.addEventListener("click", function () {
-          const box = this.closest(".box"); 
-          const priceElement = box.querySelector(".price"); 
-          const price = parseFloat(priceElement.textContent.trim()); 
-          
-          updateCartPrice(price);
-      });
-  });
+demo.addEventListener("click", function () {
+    const boxesContainer = document.querySelector(".boxes-container"); // Kontener z produktami
+    const boxes = Array.from(boxesContainer.querySelectorAll(".box")); // Wszystkie produkty
+    const image = document.querySelector(".image-container");
+
+    if (cena.innerHTML.trim() === "cena") {
+        // Przełącz na "popularnosc" i posortuj produkty według ceny
+        cena.innerHTML = "popularnosc";
+        image.src = "images/down_arrow1.png";
+        image.style.width = "37px";
+
+        // Sortowanie według ceny rosnąco
+        boxes.sort((a, b) => {
+            const priceA = parseFloat(a.querySelector(".price").textContent.trim()) || 0;
+            const priceB = parseFloat(b.querySelector(".price").textContent.trim()) || 0;
+            return priceA - priceB; // Sortuj rosnąco po cenie
+        });
+
+        // Wyczyść kontener i załaduj produkty w posortowanej kolejności
+        boxesContainer.innerHTML = "";
+        boxes.forEach((box) => boxesContainer.appendChild(box));
+
+    } else if (cena.innerHTML.trim() === "popularnosc") {
+        // Przełącz na "cena" i odwróć kolejność elementów (np. posortuj według popularności)
+        cena.innerHTML = "cena";
+        image.src = "images/images (1).png";
+        image.style.width = "26px";
+
+        // Odwrócenie kolejności elementów (jeśli popularność jest zapisana w atrybucie data-popularity)
+        boxes.reverse();
+
+        // Wyczyść kontener i załaduj produkty w odwrotnej kolejności
+        boxesContainer.innerHTML = "";
+        boxes.forEach((box) => boxesContainer.appendChild(box));
+    }
+});
+
+
+
+
+
+
+// Obsługa przycisków dodawania do koszyka
+document.querySelectorAll(".box button").forEach((button) => {
+    button.addEventListener("click", function () {
+        const box = this.closest(".box");
+        const title = box.querySelector(".title").textContent.trim();
+        const price = parseFloat(box.querySelector(".price").textContent.trim());
+        const image = box.querySelector("img").src;
+
+        // Wyświetl confirm, pytając użytkownika, czy chce dodać produkt do koszyka
+        const userConfirmed = confirm(`Czy na pewno chcesz dodać "${title}" do koszyka?`);
+
+        if (userConfirmed) {
+            // Pobierz istniejące produkty z localStorage
+            const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+            cartItems.push({ title, price, image });
+
+            // Zapisz zaktualizowany koszyk w localStorage
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+            // Aktualizuj całkowitą cenę
+            updateCartPrice(price);
+
+            // Powiadomienie o dodaniu produktu do koszyka
+            alert("Produkt dodany do koszyka!");
+        } else {
+            // Możesz dodać tu jakąś reakcję na odmowę, np.:
+            alert("Produkt nie został dodany do koszyka.");
+        }
+    });
+});
+
+
+// Aktualizacja ceny koszyka
+function updateCartPrice(price) {
+    const payElement = document.getElementById("pay");
+    const currentPrice = parseFloat(payElement.textContent.replace("zł", "").trim()) || 0;
+    const newPrice = currentPrice + price;
+
+    payElement.textContent = `${newPrice.toFixed(2)} zł`;
+    localStorage.setItem("cartTotal", newPrice.toFixed(2));
+}
+
+// Ustawienie ceny na podstawie localStorage przy załadowaniu
+// Obsługa przycisku "Wyczyść koszyk"
+let del = document.getElementById("del");
+del.addEventListener("click", function () {
+    // Wyświetl confirm z pytaniem, czy na pewno chcesz wyczyścić koszyk
+    const userConfirmed = confirm("Czy na pewno chcesz wyczyścić koszyk?");
+
+    if (userConfirmed) {
+        // Jeśli użytkownik potwierdzi, wyczyść koszyk
+        document.getElementById("pay").textContent = "0 zł";
+        localStorage.removeItem("cartTotal");
+        localStorage.removeItem("cartItems");
+        alert("Koszyk został wyczyszczony!");
+    } else {
+        // Możesz dodać reakcję na odmowę, np. nic nie rób
+        console.log("Koszyk nie został wyczyszczony.");
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Przywracanie zapisanej ceny koszyka
+    const savedTotal = localStorage.getItem("cartTotal");
+    if (savedTotal) {
+        document.getElementById("pay").textContent = `${savedTotal} zł`;
+    }
+
+    // Przywracanie zapisanych produktów w koszyku (opcjonalne, jeśli chcesz wyświetlić produkty)
+    const savedItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    savedItems.forEach(item => {
+        console.log(`Załadowano produkt: ${item.title} - ${item.price} zł`);
+        // Możesz tu dodać kod do wyświetlania produktów w interfejsie koszyka
+    });
+});
+
 
 
 
