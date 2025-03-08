@@ -109,3 +109,44 @@ Możliwość założenia konta.
 
 Data ostatniej aktualizacji: 2024-12-02
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+##Dokumentacja testów aplikacji
+###Cel testów
+Celem przeprowadzonych testów było upewnienie się, że wszystkie kluczowe funkcje sklepu internetowego działają poprawnie, zgodnie z założeniami. Testy obejmowały funkcje takie jak sortowanie artykułów, dodawanie produktów do koszyka, proces składania zamówienia, przetwarzanie danych użytkownika oraz dokonanie zakupu.
+
+###Zakres testów
+Testy obejmowały następujące funkcje:
+
+Sortowanie artykułów
+Przycisk „Kup” i obliczanie kwoty zamówienia
+Resetowanie koszyka
+Składanie zamówienia i przekierowanie do finalizacji
+Wyświetlanie produktów na podstronie „Opłata i dostawa”
+Zapis danych użytkownika w bazie
+Dokonanie zakupu – proces płatności i zapisywanie zamówienia
+
+###Metoda testowania
+Testy przeprowadzono manualnie, wykonując zaplanowane kroki i weryfikując, czy system działa zgodnie z oczekiwaniami.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+##Weryfikacja testów
+###Wyniki testów
+Wszystkie testowane funkcje przeszły pomyślnie, co oznacza, że:
+
+Produkty są poprawnie sortowane.
+Przyciski „Kup” działają prawidłowo, a kwota zamówienia jest obliczana zgodnie z dodanymi produktami.
+Opcja resetowania koszyka działa bezbłędnie.
+Proces składania zamówienia działa poprawnie, a użytkownik jest przekierowywany do finalizacji.
+Produkty wyświetlają się prawidłowo na stronie „Opłata i dostawa”.
+Dane użytkowników są zapisywane w bazie danych.
+Proces dokonania zakupu, w tym płatność, działa poprawnie i zamówienie jest zapisywane w systemie.
+Błędy i problemy
+Podczas testów nie wykryto żadnych błędów ani nieprawidłowości w działaniu aplikacji.
+
+###Wnioski
+Aplikacja działa zgodnie z oczekiwaniami i jest gotowa do dalszego użytkowania. Wszystkie funkcje działają prawidłowo, a dane są poprawnie przetwarzane.
+
