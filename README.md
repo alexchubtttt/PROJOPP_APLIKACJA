@@ -111,11 +111,11 @@ Data ostatniej aktualizacji: 2024-12-02
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-##Dokumentacja testów aplikacji
-###Cel testów
+## Dokumentacja testów aplikacji
+### Cel testów
 Celem przeprowadzonych testów było upewnienie się, że wszystkie kluczowe funkcje sklepu internetowego działają poprawnie, zgodnie z założeniami. Testy obejmowały funkcje takie jak sortowanie artykułów, dodawanie produktów do koszyka, proces składania zamówienia, przetwarzanie danych użytkownika oraz dokonanie zakupu.
 
-###Zakres testów
+### Zakres testów
 Testy obejmowały następujące funkcje:
 
 Sortowanie artykułów
@@ -126,15 +126,15 @@ Wyświetlanie produktów na podstronie „Opłata i dostawa”
 Zapis danych użytkownika w bazie
 Dokonanie zakupu – proces płatności i zapisywanie zamówienia
 
-###Metoda testowania
+### Metoda testowania
 Testy przeprowadzono manualnie, wykonując zaplanowane kroki i weryfikując, czy system działa zgodnie z oczekiwaniami.
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-##Weryfikacja testów
-###Wyniki testów
+## Weryfikacja testów
+### Wyniki testów
 Wszystkie testowane funkcje przeszły pomyślnie, co oznacza, że:
 
 Produkty są poprawnie sortowane.
@@ -147,6 +147,6 @@ Proces dokonania zakupu, w tym płatność, działa poprawnie i zamówienie jest
 Błędy i problemy
 Podczas testów nie wykryto żadnych błędów ani nieprawidłowości w działaniu aplikacji.
 
-###Wnioski
+### Wnioski
 Aplikacja działa zgodnie z oczekiwaniami i jest gotowa do dalszego użytkowania. Wszystkie funkcje działają prawidłowo, a dane są poprawnie przetwarzane.
 
