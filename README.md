@@ -156,28 +156,48 @@ Aplikacja działa zgodnie z oczekiwaniami i jest gotowa do dalszego użytkowania
 
 ## Dokumentacja projektu "Sklep internetowy" 80%:
 ### 1. Funkcjonalności
+
 Wybór artykułu – użytkownik może przeglądać dostępne produkty i dodać wybrane do koszyka.
+
 Czyszczenie koszyka – możliwość usunięcia wszystkich produktów z koszyka jednym kliknięciem.
+
 Sortowanie artykułów – użytkownik może sortować produkty według ceny lub popularności.
+
 Zamawianie produktów – finalizacja zakupu poprzez złożenie zamówienia.
 
+
 ### 2.Technologie użyte w projekcie
+
 HTML – struktura strony.
+
 CSS – stylizacja i układ wizualny.
+
 JavaScript – obsługa interakcji użytkownika oraz dynamiczne aktualizacje strony.
 
+
 ### 3. Dokumentacja techniczna
+
 ### Architektura systemu
+
 Aplikacja jest oparta na modelu klienta (frontend), bez backendu na obecnym etapie. Wszystkie dane są zarządzane po stronie klienta, a interakcje użytkownika obsługiwane są za pomocą JavaScript.
+
 Schemat bazy danych
+
 Obecnie aplikacja nie posiada backendu i bazy danych. Produkty i koszyk są przechowywane w pamięci przeglądarki (np. localStorage lub tablicach JavaScript).
+
 Obsługa API
+
 Na obecnym etapie aplikacja nie korzysta z zewnętrznych API. Możliwe jest przyszłe wdrożenie API dla obsługi produktów i zamówień.
 
+
 ### 4. Plan dalszego rozwoju
+
 Rozwinięcie podstrony "Skontaktuj się z nami" – dodanie formularza kontaktowego z walidacją.
+
 Możliwość rejestracji i logowania – wprowadzenie systemu użytkowników i sesji.
+
 Integracja z bazą danych – przechowywanie produktów i zamówień w bazie danych.
+
 Integracja z systemem płatności – umożliwienie realizacji płatności online.
 
 
