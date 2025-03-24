@@ -180,7 +180,7 @@ Obsługa API
 Na obecnym etapie aplikacja nie korzysta z zewnętrznych API. Możliwe jest przyszłe wdrożenie API dla obsługi produktów i zamówień.
 
 
-### 4.Weryfikacja projektu
+### 4. Weryfikacja projektu
 
 Projekt został zweryfikowany pod kątem poprawności działania oraz zgodności z założeniami:
 Sprawdzenie zgodności z funkcjonalnościami – każda funkcja została przetestowana manualnie i automatycznie, aby upewnić się, że spełnia swoje założenia.
