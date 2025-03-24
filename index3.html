@@ -14,7 +14,7 @@
          <header>
       
               <div class="container-head d-Flex">
-               <img src="images/images.png" alt="logo" class="img"/>
+               <img src="images/logotype1.jpg" alt="logo" class="img-logotype"/>
                <img class="burgerIcon" src="images/2473588.png" alt="menu"/>
                <nav class="menu">
                  <a href="index.html"> Katalog </a>
@@ -67,8 +67,8 @@
       <div class="container d-Flex">
          <div class="left d-Flex">
            <figure>
-             <img class="image-container" src="images/images.png" alt="logo"/>
-              <figcaption>internet sklep</figcaption>
+             <img class="image-container" src="images/logotype1.jpg" alt="logo"/>
+              <figcaption>online shop</figcaption>
            </figure>
            <nav>
              <a href="index.html">Katalog</a>
@@ -189,20 +189,11 @@
 
    
 function clearCart() {
-    // Zapytanie użytkownika o potwierdzenie przed wyczyszczeniem koszyka
-    const userConfirmed = confirm("Czy na pewno chcesz wyczyścić koszyk?");
-
-    if (userConfirmed) {
-        // Jeśli użytkownik potwierdzi, wyczyść koszyk
-        localStorage.removeItem("cartItems"); 
-        cartItems.length = 0; 
-        renderCart();
-        alert("Koszyk został wyczyszczony!");
-    } else {
-        // Jeśli użytkownik anulował, nic nie rób
-        console.log("Koszyk nie został wyczyszczony.");
-    }
+    localStorage.removeItem("cartItems"); 
+    cartItems.length = 0; 
+    renderCart();
 }
+
 
 if (orderForm) {
     orderForm.addEventListener("submit", function (e) {
