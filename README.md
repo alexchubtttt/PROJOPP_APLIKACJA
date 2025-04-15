@@ -109,3 +109,91 @@ Możliwość założenia konta.
 
 Data ostatniej aktualizacji: 2024-12-02
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Dokumentacja testów aplikacji
+### Cel testów
+Celem przeprowadzonych testów było upewnienie się, że wszystkie kluczowe funkcje sklepu internetowego działają poprawnie, zgodnie z założeniami. Testy obejmowały funkcje takie jak sortowanie artykułów, dodawanie produktów do koszyka, proces składania zamówienia, przetwarzanie danych użytkownika oraz dokonanie zakupu.
+
+### Zakres testów
+Testy obejmowały następujące funkcje:
+
+Sortowanie artykułów
+Przycisk „Kup” i obliczanie kwoty zamówienia
+Resetowanie koszyka
+Składanie zamówienia i przekierowanie do finalizacji
+Wyświetlanie produktów na podstronie „Opłata i dostawa”
+Zapis danych użytkownika w bazie
+Dokonanie zakupu – proces płatności i zapisywanie zamówienia
+
+### Metoda testowania
+Testy przeprowadzono manualnie, wykonując zaplanowane kroki i weryfikując, czy system działa zgodnie z oczekiwaniami.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+## Weryfikacja testów
+### Wyniki testów
+Wszystkie testowane funkcje przeszły pomyślnie, co oznacza, że:
+
+Produkty są poprawnie sortowane.
+Przyciski „Kup” działają prawidłowo, a kwota zamówienia jest obliczana zgodnie z dodanymi produktami.
+Opcja resetowania koszyka działa bezbłędnie.
+Proces składania zamówienia działa poprawnie, a użytkownik jest przekierowywany do finalizacji.
+Produkty wyświetlają się prawidłowo na stronie „Opłata i dostawa”.
+Dane użytkowników są zapisywane w bazie danych.
+Proces dokonania zakupu, w tym płatność, działa poprawnie i zamówienie jest zapisywane w systemie.
+Błędy i problemy
+Podczas testów nie wykryto żadnych błędów ani nieprawidłowości w działaniu aplikacji.
+
+### Wnioski
+Aplikacja działa zgodnie z oczekiwaniami i jest gotowa do dalszego użytkowania. Wszystkie funkcje działają prawidłowo, a dane są poprawnie przetwarzane.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Dokumentacja projektu "Sklep internetowy" 80%:
+### 1. Funkcjonalności
+
+Wybór artykułu – użytkownik może przeglądać dostępne produkty i dodać wybrane do koszyka.
+Czyszczenie koszyka – możliwość usunięcia wszystkich produktów z koszyka jednym kliknięciem.
+Sortowanie artykułów – użytkownik może sortować produkty według ceny lub popularności.
+Zamawianie produktów – finalizacja zakupu poprzez złożenie zamówienia.
+
+
+### 2.Technologie użyte w projekcie
+
+HTML – struktura strony.
+CSS – stylizacja i układ wizualny.
+JavaScript – obsługa interakcji użytkownika oraz dynamiczne aktualizacje strony.
+
+
+### 3. Dokumentacja techniczna
+
+### Architektura systemu
+Aplikacja jest oparta na modelu klienta (frontend), bez backendu na obecnym etapie. Wszystkie dane są zarządzane po stronie klienta, a interakcje użytkownika obsługiwane są za pomocą JavaScript.
+Schemat bazy danych
+Obecnie aplikacja nie posiada backendu i bazy danych. Produkty i koszyk są przechowywane w pamięci przeglądarki (np. localStorage lub tablicach JavaScript).
+Obsługa API
+Na obecnym etapie aplikacja nie korzysta z zewnętrznych API. Możliwe jest przyszłe wdrożenie API dla obsługi produktów i zamówień.
+
+
+### 4. Weryfikacja projektu
+
+Projekt został zweryfikowany pod kątem poprawności działania oraz zgodności z założeniami:
+Sprawdzenie zgodności z funkcjonalnościami – każda funkcja została przetestowana manualnie i automatycznie, aby upewnić się, że spełnia swoje założenia.
+Testy wydajnościowe – aplikacja została uruchomiona na różnych przeglądarkach (Chrome, Firefox, Edge) w celu sprawdzenia szybkości działania oraz responsywności.
+Testy UX/UI – interfejs użytkownika został oceniony pod kątem intuicyjności i łatwości nawigacji.
+Bezpieczeństwo – sprawdzono podstawowe zabezpieczenia, takie jak obsługa nieprawidłowych danych w koszyku.
+Stabilność aplikacji – sprawdzono poprawność działania przy dużej liczbie dodanych produktów oraz wielokrotnym sortowaniu.
+
+### 5. Plan dalszego rozwoju
+
+Rozwinięcie podstrony "Skontaktuj się z nami" – dodanie formularza kontaktowego z walidacją.
+Możliwość rejestracji i logowania – wprowadzenie systemu użytkowników i sesji.
+Integracja z bazą danych – przechowywanie produktów i zamówień w bazie danych.
+Integracja z systemem płatności – umożliwienie realizacji płatności online.
+
+
