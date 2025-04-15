@@ -29,8 +29,8 @@
                 </div>
                 </form>
                 <div class="cart d-Flex">
-                    <img src="images/3081986.png" alt="cart" id="del" class="clearCart" style="cursor: pointer">
-                        <div style="margin-top: 10px;">
+                    <img src="images/3081986.png" alt="cart" id="del" class="clearCart" class="cursor-pointer">
+                        <div class="odstep">
                           <p class="p23" id="pay"> 0 zł</p>
                           <a href="#">Złożyć zamówienie</a> <br>
                         </div>
@@ -41,8 +41,8 @@
     </header>
     
      <main class="main2" id="main">
-        <div style="width: 30%" id="div-main">
-            <h1 style="color: black">Opłata i Dostawa</h1>
+        <div class="main2-width" id="div-main">
+            <h1 class="color-h1">Opłata i Dostawa</h1>
             <form id="orderForm">
             <label for="fullName">Imię i nazwisko:</label>
             <input type="text" id="fullName" name="fullName" placeholder="Wpisz swoje imię i nazwisko" required /> <br>
@@ -87,20 +87,20 @@
               </form>
               <div> 
               <p>oglądajcie nas w media społeczeństwu: </p>
-                <a href="#" class="box insta"></a>
-                <a href="#" class="box telegram" ></a>
-                <a href="#" class="box facebook"></a>
+                <a href="#" class="box insta">.</a>
+                <a href="#" class="box telegram" >.</a>
+                <a href="#" class="box facebook">.</a>
               </div>
               </div>
            </div>
       </div>
       <div class="container copyrights">
-        <p style="color: white">Wszelkie prawa zastrzeżone &copy; 2025</p>
+        <p class="white-copy">Wszelkie prawa zastrzeżone &copy; 2025</p>
       </div> 
     </footer>
     <script>
      
-    document.addEventListener("DOMContentLoaded", function () {
+     document.addEventListener("DOMContentLoaded", function () {
     const payElement = document.getElementById("pay");
     const orderDetailsContainer = document.getElementById("orderDetails");
     const clearCartButtons = document.querySelectorAll(".clearCart");
@@ -114,104 +114,95 @@
         localStorage.setItem("cartTotal", totalAmount.toFixed(2));
     }
 
-
-
     function renderCart() {
-    orderDetailsContainer.innerHTML = ""; 
+        orderDetailsContainer.innerHTML = "";
 
-    // Tworzymy kontener na elementy koszyka
-    const itemsContainer = document.createElement("div");
-    itemsContainer.classList.add("order-items-container"); // Dodajemy klasę dla styli CSS
+        const itemsContainer = document.createElement("div");
+        itemsContainer.classList.add("order-items-container");
 
-    let main = document.getElementById("main");
-    let divMain = document.getElementById("div-main");
+        let main = document.getElementById("main");
+        let divMain = document.getElementById("div-main");
 
-    // Sprawdzamy, czy main i divMain istnieją w DOMie, aby uniknąć błędów
-    if (!main || !divMain) {
-        console.error("Nie znaleziono elementu 'main' lub 'div-main'.");
-        return; // Kończymy funkcję, jeśli elementy nie istnieją
+        if (!main || !divMain) {
+            console.error("Nie znaleziono elementu 'main' lub 'div-main'.");
+            return;
+        }
+
+        if (cartItems.length === 0) {
+            orderDetailsContainer.innerHTML = "<p>Twój koszyk jest pusty.</p>";
+            main.style.height = "";
+            divMain.style.width = "";
+        } else if (cartItems.length >= 11) {
+            cartItems.forEach((item) => {
+                const itemElement = document.createElement("div");
+                itemElement.classList.add("order-item");
+
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" style="width: auto; height: 100px;" />
+                    <p><strong>Nazwa:</strong> ${item.title}</p>
+                    <p><strong>Cena:</strong> ${item.price} zł</p>
+                `;
+                main.style.height = "600px";
+                divMain.style.width = "60%";
+                itemsContainer.appendChild(itemElement);
+            });
+
+            orderDetailsContainer.appendChild(itemsContainer);
+        } else if (cartItems.length >= 8) {
+            cartItems.forEach((item) => {
+                const itemElement = document.createElement("div");
+                itemElement.classList.add("order-item");
+
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" style="width: auto; height: 100px;" />
+                    <p><strong>Nazwa:</strong> ${item.title}</p>
+                    <p><strong>Cena:</strong> ${item.price} zł</p>
+                `;
+                divMain.style.width = "50%";
+                main.style.height = "500px";
+                itemsContainer.appendChild(itemElement);
+            });
+
+            orderDetailsContainer.appendChild(itemsContainer);
+        } else {
+            cartItems.forEach((item) => {
+                const itemElement = document.createElement("div");
+                itemElement.classList.add("order-item");
+
+                itemElement.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}" style="width: auto; height: 100px;" />
+                    <p><strong>Nazwa:</strong> ${item.title}</p>
+                    <p><strong>Cena:</strong> ${item.price} zł</p>
+                `;
+                itemsContainer.appendChild(itemElement);
+            });
+
+            orderDetailsContainer.appendChild(itemsContainer);
+        }
+
+        updateCartTotal();
     }
 
-    if (cartItems.length === 0) {
-        orderDetailsContainer.innerHTML = "<p>Twój koszyk jest pusty.</p>";
-        main.style.height = "";
-        divMain.style.width = "";
-    } else if (cartItems.length >= 11) {
-        cartItems.forEach((item) => {
-            const itemElement = document.createElement("div"); 
-            itemElement.classList.add("order-item"); // Dodajemy klasę dla stylizacji
+    function clearCart() {
+        localStorage.removeItem("cartItems");
+        cartItems.length = 0;
+        renderCart();
+    }
 
-            itemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.title}" style="width: auto; height: 100px;" />
-                <p><strong>Nazwa:</strong> ${item.title}</p>
-                <p><strong>Cena:</strong> ${item.price} zł</p>
-            `;
-            main.style.height = "600px";
-            divMain.style.width = "60%";
-            itemsContainer.appendChild(itemElement); // Dodajemy element do kontenera
+    if (orderForm) {
+        orderForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Dziękujemy za złożenie zamówienia! Wkrótce skontaktujemy się z Tobą.");
+            clearCart();
         });
-
-        orderDetailsContainer.appendChild(itemsContainer); // Dodajemy kontener do głównego elementu
-    } else if (cartItems.length >= 8) {
-        cartItems.forEach((item) => {
-            const itemElement = document.createElement("div"); 
-            itemElement.classList.add("order-item"); // Dodajemy klasę dla stylizacji
-
-            itemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.title}" style="width: auto; height: 100px;" />
-                <p><strong>Nazwa:</strong> ${item.title}</p>
-                <p><strong>Cena:</strong> ${item.price} zł</p>
-            `;
-            divMain.style.width = "50%";
-            main.style.height = "500px";
-            itemsContainer.appendChild(itemElement); // Dodajemy element do kontenera
-        });
-
-        orderDetailsContainer.appendChild(itemsContainer); // Dodajemy kontener do głównego elementu
     } else {
-        cartItems.forEach((item) => {
-            const itemElement = document.createElement("div"); 
-            itemElement.classList.add("order-item"); // Dodajemy klasę dla stylizacji
-
-            itemElement.innerHTML = `
-                <img src="${item.image}" alt="${item.title}" style="width: auto; height: 100px;" />
-                <p><strong>Nazwa:</strong> ${item.title}</p>
-                <p><strong>Cena:</strong> ${item.price} zł</p>
-            `;
-            itemsContainer.appendChild(itemElement); // Dodajemy element do kontenera
-        });
-
-        orderDetailsContainer.appendChild(itemsContainer); // Dodajemy kontener do głównego elementu
+        console.error("Element z id 'orderForm' nie istnieje w DOM.");
     }
 
-    updateCartTotal();
-}
-
-   
-function clearCart() {
-    localStorage.removeItem("cartItems"); 
-    cartItems.length = 0; 
-    renderCart();
-}
-
-
-if (orderForm) {
-    orderForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Dziękujemy za złożenie zamówienia! Wkrótce skontaktujemy się z Tobą.");
-        clearCart(); // Po złożeniu zamówienia wyczyść koszyk po potwierdzeniu
+    clearCartButtons.forEach((button) => {
+        button.addEventListener("click", clearCart);
     });
-} else {
-    console.error("Element z id 'orderForm' nie istnieje w DOM.");
-}
 
-// Obsługa kliknięcia na przyciski do czyszczenia koszyka
-clearCartButtons.forEach((button) => {
-    button.addEventListener("click", clearCart);
-});
-
-
-  
     const productButtons = document.querySelectorAll(".add-to-cart");
     productButtons.forEach((button) => {
         button.addEventListener("click", function () {
@@ -220,11 +211,10 @@ clearCartButtons.forEach((button) => {
             const price = parseFloat(box.querySelector(".price").textContent.trim());
             const image = box.querySelector("img").src;
 
-           
             cartItems.push({ title, price, image });
             localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-            renderCart(); 
+            renderCart();
         });
     });
 

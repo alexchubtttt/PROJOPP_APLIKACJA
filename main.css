@@ -404,3 +404,69 @@
 .sub p a {
     color: #9393f1;
 }
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.odstep {
+    margin-top: 10px;
+}
+
+.img-iphone15 {
+    position: relative;
+    top: 20px;
+    margin-bottom: 40px;
+    height: 260px;
+}
+
+.img-iphone12-mini {
+    margin-top: -20px;
+    height: 320px;
+}
+
+.img-iphone11 {
+    position: relative;
+    bottom: 20px;
+    margin-top: -10px;
+    height: 310px;
+}
+
+.img-iphone8-plus {
+    position: relative;
+    top: 20px;
+    margin-bottom: 50px;
+    height: 250px;
+}
+
+.img-arrow-up {
+    width: 26px;
+}
+
+.img-arrow-down {
+    width: 37px;
+}
+
+.cart-info {
+    margin-top: 10px;
+}
+
+.footer-copy {
+    color: white;
+}
+
+.inf-p{
+    color: black; text-align: center; margin-top: 40px;
+}
+
+.main2-width {
+    width: 30%;
+}
+
+.color-h1{
+    color:#000;
+}
+
+.white-copy{
+    color:white;
+}
