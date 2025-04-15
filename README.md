@@ -197,3 +197,33 @@ Integracja z bazą danych – przechowywanie produktów i zamówień w bazie dan
 Integracja z systemem płatności – umożliwienie realizacji płatności online.
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Dokumentacja procesu debugowania aplikacji
+
+ ### 1. Metoda debugowania
+W procesie debugowania wykorzystano:
+Ręczną analizę kodu HTML/CSS w edytorze kodu (np. VS Code)
+
+ ### 2. Proces debugowania
+#### Reprodukcja błędów
+Błędy w warstwie wizualnej zostały zauważone podczas uruchomienia aplikacji w przeglądarce – objawiały się m.in. nieprawidłowym rozmieszczeniem elementów oraz niedziałającymi stylami.
+
+#### Wyizolowanie źródła błędów
+Zlokalizowano błędy w plikach CSS oraz inline-style:
+użycie przestarzałych lub niezgodnych z dobrymi praktykami stylów w tagach HTML (style wpisane inline),
+niektóre style nie były poprawnie przypisane przez klasy CSS lub były nadpisywane przez inne reguły.
+
+#### Identyfikacja przyczyny
+Przyczyną błędów okazały się:
+- błędna składnia CSS,
+- zbyt duże poleganie na stylach inline zamiast stosowania klas i zewnętrznych plików CSS,
+- brak odpowiedniego priorytetu selektorów.
+
+#### Weryfikacja naprawy
+Po wprowadzeniu zmian:
+- poprawiono składnię,
+- usunięto style inline,
+- uporządkowano struktury klas i ich hierarchię.
+
+Działanie aplikacji zostało zweryfikowane poprzez ponowne uruchomienie w przeglądarce – błędy nie występują, a stylizacja działa prawidłowo.
