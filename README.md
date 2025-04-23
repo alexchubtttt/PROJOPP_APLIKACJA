@@ -1,3 +1,17 @@
+## Instrukcja uruchomienia aplikacji
+### Aby uruchomić aplikację, proszę wykonać poniższe kroki:
+
+- Pobierz projekt
+ Proszę kliknąć na przycisk Code (z prawej strony repozytorium), a następnie wybrać opcję Download ZIP. Po pobraniu pliku ZIP, należy
+ go rozpakować na swoim komputerze.
+
+- Otwórz plik HTML
+W rozpakowanym folderze należy znaleźć plik index.html (strona główna) i dwukrotnie kliknąć na ten plik, aby otworzyć stronę.
+
+Po wykonaniu tych kroków aplikacja powinna działać bez problemów.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Nazwa aplikacji: Sklep Internetowy
 
 Sklep Internetowy to aplikacja mająca na celu dać możliwość użytkownikom zakupu techniki elektronicznej online w sposób prosty i wygodny. Aplikacja pozwala na przeglądanie dostępnych produktów, dodawanie ich do koszyka, użytkownicy mogą założyć konto w sklepie lub zalogować się na istniejące konto, składanie zamówień online.
@@ -19,10 +33,37 @@ Strona produktu: Zawiera szczegóły dotyczące produktu, zdjęcia, ceny oraz pr
 Koszyk: Wyświetla produkty dodane do koszyka, umożliwia edytowanie ilości lub usuwanie produktów.
 Logowanie się: Pozwala użytkownikom zalogować się na stronie.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Dokumentacja projektu "Sklep internetowy" v1.0
+###  Funkcjonalności
+
+- Wybór artykułów – użytkownik może przeglądać dostępne produkty w sklepie i dodać wybrane do koszyka. Każdy produkt zawiera nazwę, cenę oraz zdjęcie.
+
+- Czyszczenie koszyka – użytkownik ma możliwość usunięcia wszystkich produktów z koszyka jednym kliknięciem.
+
+- Sortowanie artykułów – użytkownik może sortować produkty według ceny lub popularności. Ta funkcja ułatwia szybkie znalezienie produktów zgodnie z preferencjami użytkownika.
+
+- Zamawianie produktów – użytkownik finalizuje zakup poprzez złożenie zamówienia. Proces obejmuje przegląd koszyka oraz podanie danych niezbędnych do realizacji zakupu (adres dostawy, opcje płatności).
+
+### 2. Technologie użyte w projekcie
+Projekt został stworzony z wykorzystaniem podstawowych technologii webowych, które zapewniają pełną funkcjonalność aplikacji w przeglądarkach internetowych:
+
+- HTML – służy do budowy struktury strony, tworzenia elementów, takich jak formularze, przyciski, listy produktów.
+
+- CSS – odpowiada za stylizację i układ wizualny strony. Użyto go do stworzenia atrakcyjnego wyglądu sklepu oraz zapewnienia responsywności na różnych urządzeniach.
+
+- JavaScript – służy do obsługi interakcji użytkownika. Dzięki JavaScript możliwe jest dynamiczne aktualizowanie koszyka, sortowanie produktów oraz interaktywne wyświetlanie treści.
+
+### 3. Dokumentacja techniczna
+#### Architektura systemu
+Aplikacja działa w modelu klienta (frontend), co oznacza, że cała logika aplikacji działa po stronie użytkownika. Wszystkie dane (produkty, koszyk) są przechowywane w pamięci przeglądarki, w tym przy użyciu mechanizmów takich jak localStorage lub tablice JavaScript. Interakcje użytkownika są obsługiwane za pomocą JavaScript, który dynamicznie modyfikuje zawartość strony bez potrzeby odświeżania.
+
+Data wersji finalnej: 23-04-2025
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+## Clean code
 
 v0.02 - nadanie sensownych nazw, przede wszystkim ta zasada dotyczy zmienne klasy i funkcje. To jest bardzo ważna praktyka pozwalająca zrozumieć co w sobie przechowuje np. zmienna, zwiększa czytelność i poprawność napisanego kodu.
 

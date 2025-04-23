@@ -1,0 +1,9 @@
+Licencja
+Projekt "Sklep internetowy" jest licencjonowany na warunkach MIT License.
+
+MIT License
+Copyright (c) 2025 [Oleksandr Chub]
+
+Zezwala się na korzystanie z tego oprogramowania w celach komercyjnych, prywatnych lub akademickich, bez jakichkolwiek ograniczeń, w tym praw do używania, kopiowania, modyfikowania, scalania, publikowania, rozpowszechniania, udzielania sublicencji i/lub sprzedaży kopii oprogramowania, pod warunkiem, że w każdej kopii lub istotnej części tego oprogramowania zawarte będą poniższe informacje o prawach autorskich oraz niniejsza licencja.
+
+To oprogramowanie jest dostarczane "tak jak jest", bez jakichkolwiek gwarancji, wyraźnych lub dorozumianych, w tym między innymi gwarancji przydatności handlowej i przydatności do określonego celu. W żadnym wypadku autorzy lub właściciele praw autorskich nie ponoszą odpowiedzialności za jakiekolwiek roszczenia, szkody lub inne obowiązki, wynikające z używania tego oprogramowania, nawet jeśli zostały one poinformowane o możliwości wystąpienia takich szkód.
